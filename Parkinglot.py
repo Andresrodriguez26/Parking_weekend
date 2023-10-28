@@ -19,5 +19,13 @@ class Parking_garage:
                 print("Thank you for your payment. Please be advice you have 10 mintues to leave the garage. ")
             else:
                 print("Payment is required to exit. Please make sure you pay for your parking")
-
+    def leaveGarage(self):
+        if 'ticket' in self.currentTicket:
+            if self.currentTicket['paid']:
+                print("Thank you for parking, have a wonderfull day!")
+                self.parkingSpaces.append(self.currentTicket['parking_space'])
+                self.tickets.append(self.currentTicket['ticket'])
+                self.currentTicket = {}
+            else:
+                print("Payment is required to exit. Please pay for your parking.")
         
