@@ -1,5 +1,4 @@
-# Group project members: Andres, Berik & Elizabeth
-
+#### Andres did this part
 class Parking_garage:
     def __init__(self, max_tickets, max_parkingspaces):
         self.tickets = list(range(1, max_tickets + 1))
@@ -21,7 +20,8 @@ class Parking_garage:
                 print("Thank you for your payment. Please be advice you have 10 mintues to leave the garage.")
             else:
                 print("Payment is required to exit. Please make sure you pay for your parking")
-    
+   
+#### Berik did this part
     def leaveGarage(self):
         if 'ticket' in self.actualticket:
             if self.actualticket['paid']:
@@ -31,6 +31,8 @@ class Parking_garage:
                 self.actualticket = {}
             else:
                 print("Payment is required to exit. Please pay for your parking.")
+
+#### Liz did this part 
 
 garage = Parking_garage(10, 10)
 while True:
